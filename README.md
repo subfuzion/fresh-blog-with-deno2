@@ -4,7 +4,7 @@ If you haven't heard about Fresh, a popular web framework built on Deno, go take
 
 For a slightly better reading experience, the following guide is also published here:
 
-codesnip.sh/deno/fresh-blog-from-scratch.
+https://codesnip.sh/deno/fresh-blog-from-scratch
 
 Coming primarily from Next.js and Astro, I'm intrigued and pleased to find lots to like about Fresh. The idea that everything is a server component that ships HTML to the client by default, but supports [islands architecture](https://fresh.deno.dev/docs/concepts/architecture) for independently rehydrated regions of interactivity where needed, really fits my use case well. I'm getting ready to start migrating [Fantastic Realms](https://fantasticrealms.ai), a Next.js project I'm working on (hoping to launch in early 2025), over to Deno and Fresh, and I plan to showcase that effort shortly.
 
