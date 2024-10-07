@@ -29,6 +29,19 @@ export async function getPost(slug: string): Promise<Post> {
     blurb: attrs.blurb,
     content: body,
   };
-  console.log(post);
   return post;
+}
+
+export async function getPosts(): Promise<Post[]> {
+  const files = Deno.readDir(POSTS_DIR);
+  const promises = [];
+  for await (const file of files) {
+    if (file.name.startsWith(".")) continue;
+    const slug = file.name.replace(".md", "");
+    promises.push(getPost(slug));
+  }
+  const posts = (await Promise.all(promises) as Post[])
+    .filter((post) => post.publishedAt instanceof Date);
+  posts.sort((a, b) => b.publishedAt!.getTime() - a.publishedAt!.getTime());
+  return posts;
 }
