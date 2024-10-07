@@ -2,6 +2,8 @@
 
 If you haven't heard about Fresh, a popular web framework built on Deno, go take a quick look at the [home page](https://fresh.deno.dev/) first and then come back here.
 
+> For a slightly better reading experience, the following guide is also published here: codesnip.sh/deno/fresh-blog-from-scratch.
+
 Coming primarily from Next.js and Astro, I'm intrigued and pleased to find lots to like about Fresh. The idea that everything is a server component that ships HTML to the client by default, but supports [islands architecture](https://fresh.deno.dev/docs/concepts/architecture) for independently rehydrated regions of interactivity where needed, really fits my use case well. I'm getting ready to start migrating [Fantastic Realms](https://fantasticrealms.ai), a Next.js project I'm working on (hoping to launch in early 2025), over to Deno and Fresh, and I plan to showcase that effort shortly.
 
 Andy Jiang ([@andyjiang](https://x.com/andyjiang))'s excellent [Fresh blog example](https://deno.com/blog/build-a-blog-with-fresh) was literally the first tutorial I followed when I was coming up to speed. I'm going to riff on his work with some tweaks to help others also come up to speed using the latest Deno release candidate in time for the official 2.0 launch this week.
@@ -11,7 +13,13 @@ This is a quick dive into a simple blog engine to orient you to Deno and Fresh. 
 * Setting up (installing Deno, upgrading to the latest 2.0 RC, and initializing a Fresh project)
 * Deleting unnecessary boilerplate to start "fresh" ;)
 * Adding components for rendering the blog index and individual blog posts
+
+<details>
+
+<summary>Setting up</summary>
+
 ## Getting Started
+
 ### Install Deno
 
  1. Download and install Deno using the instructions at: https://docs.deno.com/runtime/
@@ -46,6 +54,8 @@ Your output should look like this:
 ```
 deno 2.0.0-rc.10
 ```
+
+</details>
 
 ### Scaffold a new Fresh project
 
