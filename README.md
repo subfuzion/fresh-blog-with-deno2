@@ -57,6 +57,10 @@ deno 2.0.0-rc.10
 
 </details>
 
+<details>
+
+<summary>Initializing a Fresh project</summary>
+
 ### Scaffold a new Fresh project
 
 ```
@@ -146,6 +150,13 @@ export default function Home() {
 ```
 
 You should now see a blank page at `http://localhost:8000`. Now you're ready to start actually implementing your blog!
+
+</details>
+
+<details>
+
+<summary>Add components for rendering individual blog posts and the main blog index</summary>
+
 ## Create a couple of sample blog posts
 
 Create a `posts` directory with two markdown files in it:
@@ -547,6 +558,8 @@ Now navigate to the home page:
 https://localhost:8000
 
 Voila! It should look decent and you should be able to click through to the individual posts. Try removing the `publish_at` property in the front matter of one of the posts. The post should no longer be displayed in the list nor be accessible via its slug.
+
+</details>
 
 Congratulations if you made it this far. I hope you enjoy your Deno and Fresh exploration as much as I am.
 
