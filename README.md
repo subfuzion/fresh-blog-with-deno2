@@ -207,7 +207,7 @@ http://localhost:8000/my-first-post
 To parameterize the route handler, create a file called `routes/[slug].tsx`. 
 
 ```
-touch routes/[slug].tsx
+touch routes/\[slug\].tsx
 ```
 
 ### Load the post content
